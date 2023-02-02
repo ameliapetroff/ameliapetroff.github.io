@@ -6,8 +6,11 @@ img {
     width: 100%; /*Please leave this line.*/
     display: block;
   }
-  h1 {
+  header{
     background-color: rgb(240, 141, 52);
+  }
+  
+  h1 {
     color: rgb(250, 250, 250); /* Same as body background. */
     font-size: 2em;
     font-family: "Sutro Bold", sutro;
@@ -16,7 +19,6 @@ img {
   }
   
   h2 {
-    background-color: rgb(240, 141, 52);
     color: rgb(249, 221, 191);
     font-size: 1.5em;
     padding: 0rem 1.5rem 1rem;
@@ -67,7 +69,7 @@ img {
     font-style: normal;
   }
   
-  p {
+  footer {
     background-color: rgb(240, 141, 52);
     padding: 1rem 1.5rem 1rem;
     color: rgb(255, 255, 255);
