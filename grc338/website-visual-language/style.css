@@ -142,6 +142,12 @@ font-size:2em;
 	margin: 0.5em 0 1em;
   }
   
+ 
+  .hoursparagraph{
+text-align: left;
+padding-left: 0em;
+
+  }
   .price {
 	grid-row: 1/2;
 	grid-column: 2/3;
