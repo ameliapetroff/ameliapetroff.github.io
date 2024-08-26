@@ -1,264 +1,223 @@
-/* CSS document */
-html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-}
+/*CSS document*/
 
-/* Global Styles */
-body {
-    font-family: sans-serif;
-}
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 img {
-    width: 100%;
-    display: block;
-    margin-top: 1.5em;
+	width: 100%;
+	display: block;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #fefefe;
+	color: #252525;
+}
+
+h1 {
+	width: 6em;
+	padding-bottom: 1rem;
+        padding-top: 1rem;
+	padding-left: 1em;
 }
 
 a {
-    text-decoration: none;
+	color: #252525;
+	text-decoration: none;
 }
 
-/* Container */
 div.container, div.home-container {
-    max-width: 40em;
-    margin: auto;
-    padding: 1em;
+	margin: auto;
+	max-width: 45em;
 }
 
-/* Header Styles */
-header {
-    padding: 1em 0.5em 1.5em;
+ul {
+	list-style-type: none;
+	font-weight: bold;
+	margin: auto;
+	padding-left: 1em;
+	line-height: 1.5em;
 }
 
-/* Logo */
-img.logo {
-    margin-bottom: 1em;
-    max-width: 6.5em;
+
+nav li {
+	margin-right: 1.25em;
 }
 
-/* Navigation */
 nav ul {
-    margin: 0 0 1em 0.5em;
+	text-align: left;
 }
 
-nav ul li {
-    list-style: none;
-    font-weight: bold;
-    margin: 0.2em 0.5em 0.2em 0;
+
+nav a {
+	color: #557799;
+	text-decoration: none;
+	font-family: sans-serif;
 }
 
-nav ul li a {
-    color: #557799;
+h2 {
+	padding-left: 0.5em;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: serif;
+	color: #557799;
 }
 
-/* Footer */
-footer {
-    background-color: #758dbc;
-    color: #ffffff;
-    padding: 0.5em;
-    width: 100%;
+section.secondary-story h2 {
+	padding-left: 0.5em;
+	font-size: 1.5em;
 }
 
-/* Main Story */
-section.mainstory a h2 {
-    font-size: 3em;
-    font-weight: bold;
-    font-family: serif;
-    color: #4f658d;
-    padding: 0 0.15em;
+section.tertiary-story h2 {
+	padding-left: 1em;
+	font-size: 1em;
+	border-top: 1px #557799 solid;
+	padding-top: .60em;
 }
 
-section.mainstory a p {
-    color: #3f3f40;
-    padding: 0 0.5em 2em;
-}
-
-/* Secondary Story */
-section.secondary a h2 {
-    font-size: 2em;
-    font-weight: bold;
-    font-family: serif;
-    color: #4f658d;
-    padding: 0 0.2em;
-}
-
-section.secondary a p {
-    color: #3f3f40;
-    padding: 0 0.5em 2em;
-}
-
-/* Tertiary Story */
-section.tertiary {
-    border-top: solid 1px #557799;
-    margin: 0 0.5em;
-    padding-top: 0.4em;
-}
-
-section.tertiary h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: serif;
-    color: #4f658d;
-}
-
-section.tertiary p {
-    color: #3f3f40;
-    padding: 0 0 2em;
-}
-
-/* Main Story Specific (mainstory.html) */
-figure figcaption {
-    padding: 0 0.5em 1em;
-    font-style: italic;
-    color: #787878;
+figcaption {
+	padding-top: 0.25em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-style: italic;
+	color: #555555;
 }
 
 article h2 {
-    font-size: 3em;
-    font-weight: bold;
-    font-family: serif;
-    color: #4f658d;
-    padding: 0.5em 0.15em;
-}
-
-article p {
-    padding: 0 0.5em 1em;
-}
-
-/* Sidebar (mainstory.html) */
-aside {
-    background-color: #cbcfff;
-    padding: 1em 0.5em 4em;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: serif;
+	color: #557799;
 }
 
 aside h2 {
-    font-size: 1.15em;
-    padding-left: 0.3em;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+aside {
+	background-color: #c5c9fa;
+	padding: 1em;
+}
+
+p {
+	text-decoration: none;
+	padding: 0 1em 1em;
 }
 
 aside p {
-    padding: 0 0 2em;
-    margin: auto;
+	padding-left: 0;
 }
 
-aside img {
-    padding: 0.5em;
-    margin: 0;
+footer{
+    background-color: #557799;
+    color: #ffffff;
+    height: 2rem;
+    padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-/* Desktop-Specific Changes */
 @media screen and (min-width: 35em) {
-    nav ul li {
-        display: inline-block;
-        padding: 0 1em 0 0;
-    }
+	nav ul li {
+		display: inline-block;
+	}
 
-    header {
-        padding: 1em 0 1.5em;
-    }
-
-    section.mainstory a p,
-    section.secondary a p,
-    section.tertiary p {
-        padding: 0 0 2em;
-    }
-
-    figure figcaption,
-    article p {
-        padding: 0 0 1em;
-    }
+	h1, h2, section.secondary-story h2,section.tertiary-story h2, article h2, p, ul, figcaption {
+		padding-left: 0em;
+	}
 }
-
-/* Wider Screen Adjustments */
 @media only screen and (min-width: 60em) {
-    div.home-container {
-        max-width: 80em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
 
-    div.container {
-        max-width: 60em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
+	div.home-container {
+		max-width: 80em;
+		padding: 0 1em;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+	}
 
-    header, footer {
-        grid-column: 1 / 3;
-    }
+	div.container {
+		max-width: 60em;
+		padding: 0 1em;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 1em;
+	}
 
-    div.home-container main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-    }
+	header,footer {
+		grid-column: 1/3;
+	}
 
-    div.home-container aside {
-        background: none;
-        padding-top: 0;
-    }
+	div.home-container main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+	}
 
-    section.mainstory {
-        grid-column: 2 / 4;
-        grid-row: 1 / 3;
-        display: flex;
-    }
+	div.home-container aside{
+		background: none;
+		padding: 0;
+		margin-top: 0;
+	}
 
-    section.mainstory a {
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
+	div.container aside{
+		margin-top: 0;
+	}
 
-    section.mainstory a fig {
-        flex: 1 0 12em;
-        display: flex;
-    }
+	section.main-story{
+		grid-column: 2/4;
+		grid-row: 1/3;
+		display: flex;
+	}
 
-    section.mainstory a fig img {
-        object-fit: cover;
-    }
+	section.main-story a {
+		flex: 1 0 12em;
+		display: flex;
+		flex-direction: column;
+	}
 
-    section.mainstory a h2 {
-        flex: 0 0 1em;
-    }
+	section.main-story a figure{
+		flex: 1 0 12em;
+		display: flex;
+	}
+	
+	section.main-story a figure img{
+		object-fit: cover;
+	}
 
-    section.mainstory a p {
-        flex: 0 0 4em;
-    }
+	section.main-story a h2{
+		flex: 0 0 1em;
+	}
 
-    section.secondarystory {
-        display: flex;
-    }
+	section.main-story a p{
+		flex: 0 0 4em;
+	}
 
-    section.secondarystory a {
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
+	section.secondary-story{ 
+		display: flex;
+	}
 
-    section.secondarystory a fig {
-        flex: 1 0 12em;
-        display: flex;
-    }
+	section.secondary-story a {
+		flex: 1 0 12em;
+		display: flex;
+		flex-direction: column;
+	}
 
-    section.secondarystory a fig img {
-        object-fit: cover;
-    }
+	section.secondary-story a figure{
+		flex: 1 0 12em;
+		display: flex;
+	}
+	
+	section.secondary-story a figure img{
+		object-fit: cover;
+	}
 
-    section.secondarystory a h2 {
-        flex: 0 0 1em;
-    }
+	section.secondary-story a h2{
+		flex: 0 0 1em;
+	}
 
-    section.secondarystory a p {
-        flex: 0 0 4em;
-    }
+	section.secondary-story a p{
+		flex: 0 0 4em;
+	}
 }
