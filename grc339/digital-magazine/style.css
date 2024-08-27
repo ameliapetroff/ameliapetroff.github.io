@@ -7,10 +7,14 @@ img {
 	display: block;
 }
 
+
 body {
-	font-family: sans-serif;
-	background-color: #fefefe;
+	font-family: "bilo", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	color: #252525;
+	background-color: #F5F5DC;
+	 
 }
 
 h1 {
@@ -49,17 +53,20 @@ nav ul {
 
 
 nav a {
-	color: #557799;
-	text-decoration: none;
-	font-family: sans-serif;
+	color: #388659;
+	font-family: "park-lane", serif;
+font-weight: 700;
+font-style: bold;
 }
 
 h2 {
 	padding-left: 0.5em;
 	font-size: 2.5em;
-	font-weight: bold;
-	font-family: serif;
-	color: #557799;
+	font-family: "chippewa-falls", sans-serif;
+font-weight: 500;
+font-style: bold;
+color: #388659;
+
 }
 
 section.secondary-story h2 {
@@ -70,7 +77,7 @@ section.secondary-story h2 {
 section.tertiary-story h2 {
 	padding-left: 1em;
 	font-size: 1em;
-	border-top: 1px #557799 solid;
+	border-top: 1px #388659 solid;
 	padding-top: .60em;
 }
 
@@ -88,7 +95,7 @@ article h2 {
 	font-size: 2em;
 	font-weight: bold;
 	font-family: serif;
-	color: #557799;
+	color: #388659;
 }
 
 aside h2 {
@@ -97,7 +104,7 @@ aside h2 {
 }
 
 aside {
-	background-color: #c5c9fa;
+	background-color: #388659;
 	padding: 1em;
 }
 
@@ -111,7 +118,7 @@ aside p {
 }
 
 footer{
-    background-color: #557799;
+    background-color: #388659;
     color: #ffffff;
     height: 2rem;
     padding-top: 1em;
