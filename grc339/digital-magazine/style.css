@@ -308,13 +308,11 @@ footer{
 }
 
 
-
-.main-photogallery{
+.main-photogallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(85% + 7em);
+    padding-bottom: calc(45% + 7em);
 }
-
 
 div.photogallery {
     max-width: 60em;
@@ -329,13 +327,38 @@ input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
 input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
 input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
 input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
-input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8) {
     opacity: 1;
+}
+
+
+div.photogallery figure:nth-of-type(7) img {
+    object-position: top; 
+}
+
+
+div.photogallery figure:nth-of-type(1) img {
+    object-position: 0% 20%; 
+}
+
+
+div.photogallery figure:nth-of-type(3) img {
+    object-position: bottom; 
+}
+
+
+div.photogallery figure:nth-of-type(6) img {
+    object-position: 0% 65%; 
+}
+
+
+div.photogallery figure:nth-of-type(5) img {
+    object-position: 20% 15%; 
 }
 
 div.photogallery nav {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: .3em;
 }
 
@@ -343,16 +366,21 @@ div.photogallery input {
     display: none;
 }
 
-div.photogallery figure{
+div.photogallery figure {
     margin: 0;
-    width: calc(100%-2em);
+    width: 65%;
+    height: 500px; /* Set a fixed height for all images */
     position: absolute;
     opacity: 0;
     transition: left 0.5s, opacity 0.5s;
+    overflow: hidden;
 }
 
 div.photogallery img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
 }
 
 footer {
@@ -365,4 +393,3 @@ footer {
     position: relative;
     bottom: 0;
 }
-
