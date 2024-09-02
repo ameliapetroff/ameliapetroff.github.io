@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Newsletter Subscription</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xbg3pip.css">
+    <title>Climbing Photo Gallery</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="https://use.typekit.net/ewf5lsj.css">
-</head>
+</head>    
 
 <body>
     <div class="container">
@@ -26,71 +26,75 @@
                 </ul>
             </nav>
         </header>
-        
-        <div class="form-container">
-            <main>
-                <section class="subscription-form">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <form action="#" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <label for="experience">Climbing Experience Level:</label>
-                        <select id="experience" name="experience" required>
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                            <option value="expert">Expert</option>
-                        </select>
-                  
-                        <label for="favorite-climb">Your Favorite Yosemite Climb:</label>
-                        <input type="text" id="favorite-climb" name="favorite_climb">
-                  
-                        <label for="interests">What climbing topics are you interested in? (e.g., Big Wall Climbing, Bouldering, Gear Reviews, Climbing History)</label>
-                        <div id="interests">
-                            <label>
-                                <input type="checkbox" name="interests" value="big-wall-climbing">
-                                Big Wall Climbing
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="bouldering">
-                                Bouldering
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="gear-reviews">
-                                Gear Reviews
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="climbing-history">
-                                Climbing History
-                            </label>
-                            <label>
-                                <input type="checkbox" name="interests" value="training-tips">
-                                Training Tips
-                            </label>
-                        </div>
-                  
-                        <label for="trip-plans">Are you planning a climbing trip to Yosemite soon?</label>
-                        <select id="trip-plans" name="trip_plans" required>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                            <option value="maybe">Maybe</option>
-                        </select>
-                  
-                        <label for="comments">Any comments or suggestions?</label>
-                        <textarea id="comments" name="comments" rows="4"></textarea>
-                  
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </section>
+       
+        <div class="photogallery">
+            <input type="radio" name="item" id="photo1" checked="checked">
+            <input type="radio" name="item" id="photo2">
+            <input type="radio" name="item" id="photo3">
+            <input type="radio" name="item" id="photo4">
+            <input type="radio" name="item" id="photo5">
+            <input type="radio" name="item" id="photo6">
+            <input type="radio" name="item" id="photo7">
+            <input type="radio" name="item" id="photo8">
+     
+            <main class="main-photogallery">
+                <figure>
+                    <img src="crack_climb.jpeg" alt="Crack Climbing">
+                    <figcaption>Challenging crack climb on a steep wall.</figcaption> 
+                </figure>
+                <figure>
+                    <img src="finger_crack.jpeg" alt="Finger Crack Climbing">
+                    <figcaption>Finger crack climb requiring precision and technique.</figcaption> 
+                </figure>
+                <figure>
+                    <img src="jumar_picture.jpeg" alt="Jumar Ascending">
+                    <figcaption>Using jumars to ascend a fixed rope efficiently.</figcaption> 
+                </figure>
+                <figure>
+                    <img src="kids_summit.jpeg" alt="Kids Reaching Summit">
+                    <figcaption>Young climbers celebrating at the summit.</figcaption>  
+                </figure>
+                <figure>
+                    <img src="retro_climbers.jpeg" alt="Retro Climbers">
+                    <figcaption>Retro style climbers scaling a classic route.</figcaption> 
+                </figure>
+                <figure>
+                    <img src="Ron_kauk.jpeg" alt="Ron Kauk Climbing">
+                    <figcaption>Legendary climber Ron Kauk on a famous route.</figcaption> 
+                </figure>
+                <figure>
+                    <img src="maze_descent.jpeg" alt="Maze Descent">
+                    <figcaption>Descent through a maze of rock formations.</figcaption> 
+                </figure>
             </main>
+     
+            <nav>
+                <label for="photo1">
+                    <img src="crack_climb.jpeg" alt="Crack Climbing">
+                </label>
+                <label for="photo2">
+                    <img src="finger_crack.jpeg" alt="Finger Crack Climbing">
+                </label>
+                <label for="photo3">
+                    <img src="jumar_picture.jpeg" alt="Jumar Ascending">
+                </label>
+                <label for="photo4">
+                    <img src="kids_summit.jpeg" alt="Kids Reaching Summit">
+                </label>
+                <label for="photo5">
+                    <img src="retro_climbers.jpeg" alt="Retro Climbers">
+                </label>
+                <label for="photo6">
+                    <img src="Ron_kauk.jpeg" alt="Ron Kauk Climbing">
+                </label>
+                <label for="photo7">
+                    <img src="maze_descent.jpeg" alt="Maze Descent">
+                </label>
+            </nav>
         </div>
 
         <footer>
-            <p>All rights reserved.</p>
+            <p>All rights reserved. Climbing Gallery © 2024</p>
         </footer>
     </div>
 </body>
